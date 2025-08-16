@@ -4,23 +4,23 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "AI Chatbot Assistant",
-    description: "An AI-powered chatbot built with Next.js, OpenAI API, and Tailwind CSS.",
-    image: "/projects/chatbot.png",
-    link: "https://github.com/username/chatbot",
-    tech: ["Next.js", "Tailwind", "OpenAI API"]
+    title: "House Rental Management System",
+    description: "A comprehensive platform for managing house rentals, built with Next.js, MongoDB, and Tailwind CSS.",
+    image: "/projects/rental-system.png",
+    link: "https://github.com/username/rental-system",
+    tech: ["Next.js", "Tailwind", "MongoDB  ", "Node.js"]
   },
   {
     title: "Portfolio Website",
     description: "Personal portfolio showcasing design, development, and AI projects.",
-    image: "/projects/portfolio.png",
+    image: "/images/portifolio.png",
     link: "https://myportfolio.com",
     tech: ["Next.js", "Framer Motion", "Vercel"]
   },
   {
     title: "E-Commerce Store",
     description: "Full-stack e-commerce store with payment integration and admin panel.",
-    image: "/projects/store.png",
+    image: "/images/maalifu.png",
     link: "https://github.com/username/store",
     tech: ["Next.js", "Stripe", "MongoDB"]
   }

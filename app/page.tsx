@@ -31,7 +31,7 @@ export default function Home() {
       >
     
         <Image
-          src="/images/homepg.png"
+          src="/images/homepage.png"
           width={500}
           height={500}
           alt="Haile Abebe animated avatar"

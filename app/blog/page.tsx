@@ -8,7 +8,7 @@ const blogPosts = [
     date: "August 5, 2025",
     description:
       "Sharing my journey from building websites to creating AI-powered solutions, and the lessons I learned along the way.",
-    image: "/blog/ai-transition.jpg",
+    image: "/images/web2ai.png",
     slug: "web-to-ai"
   },
   {
@@ -16,7 +16,7 @@ const blogPosts = [
     date: "July 20, 2025",
     description:
       "A curated list of apps, books, and techniques that have helped me grow both as a developer and as a person.",
-    image: "/blog/personal-dev-tools.jpg",
+    image: "/images/webtools.jpg",
     slug: "personal-development-tools"
   },
   {
@@ -24,7 +24,7 @@ const blogPosts = [
     date: "July 10, 2025",
     description:
       "Behind the scenes of designing and developing the portfolio you’re looking at right now.",
-    image: "/blog/portfolio-story.jpg",
+    image: "/images/portifo.jpg",
     slug: "portfolio-story"
   }
 ];
