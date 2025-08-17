@@ -35,7 +35,7 @@ export default function Home() {
           width={500}
           height={500}
           alt="Haile Abebe animated avatar"
-          className="w-full h-full object-cover hover:md:not-last:scale-105"
+          className="w-full h-full object-cover hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/40 hover:rotate-2 transition-all duration-500 ease-out rounded-2xl overflow-hidden"
         />
       </motion.div>
 
@@ -61,13 +61,13 @@ export default function Home() {
 
         <div className="flex flex-wrap gap-4">
           <a
-            href="#portfolio"
+            href="/projects"
             className="px-6 py-3 bg-indigo-600 rounded-md hover:bg-indigo-700 transition font-semibold"
           >
             Explore My Work
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="px-6 py-3 border border-indigo-600 rounded-md hover:bg-indigo-600 hover:text-white transition font-semibold"
           >
             Get in Touch

@@ -47,7 +47,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-lg mx-auto bg-gray-900 p-8 rounded shadow-md"
+      className="max-w-lg mt-30 mx-auto bg-gray-900 p-8 rounded shadow-md"
       noValidate
     >
       <h2 className="text-2xl font-semibold mb-6 text-white text-center">
