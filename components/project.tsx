@@ -27,15 +27,15 @@ const projects = [
   },
   {
     title: "Learning Management System",
-    description: "A platform for online courses, quizzes, and student progress tracking.",
-    image: "/images/webtools.jpg",
+    description: "A platform for online courses, registration, and student progress tracking for kidus sillase.",
+    image: "/images/woldas.jpg",
     link: "https://github.com/username/lms",
     tech: ["React", "Node.js", "MongoDB"]
   },
   {
     title: "AI Image Generator",
     description: "A web app that generates images from text using AI models.",
-    image: "/images/web2ai.png",
+    image: "/images/imagegen.png",
     link: "https://github.com/username/ai-image-generator",
     tech: ["Next.js", "OpenAI API", "Tailwind"]
   }
@@ -113,7 +113,7 @@ export default function Projects() {
             className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-semibold shadow-lg transition-all duration-300"
             disabled={totalPages <= 1}
           >
-            Next
+            More+
           </button>
         </div>
       </div>
