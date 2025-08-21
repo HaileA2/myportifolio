@@ -1,19 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const projects = [
   {
     title: "House Rental Management System",
     description: "A comprehensive platform for managing house rentals, built with Next.js, MongoDB, and Tailwind CSS.",
-    image: "/projects/rental-system.png",
+    image: "/images/houserental.png",
     link: "https://github.com/username/rental-system",
     tech: ["Next.js", "Tailwind", "MongoDB  ", "Node.js"]
   },
   {
     title: "Portfolio Website",
     description: "Personal portfolio showcasing design, development, and AI projects.",
-    image: "/images/portifolio.png",
+    image: "/images/myport.png",
     link: "https://myportfolio.com",
     tech: ["Next.js", "Framer Motion", "Vercel"]
   },
@@ -23,10 +24,28 @@ const projects = [
     image: "/images/maalifu.png",
     link: "https://github.com/username/store",
     tech: ["Next.js", "Stripe", "MongoDB"]
+  },
+  {
+    title: "Learning Management System",
+    description: "A platform for online courses, quizzes, and student progress tracking.",
+    image: "/images/webtools.jpg",
+    link: "https://github.com/username/lms",
+    tech: ["React", "Node.js", "MongoDB"]
+  },
+  {
+    title: "AI Image Generator",
+    description: "A web app that generates images from text using AI models.",
+    image: "/images/web2ai.png",
+    link: "https://github.com/username/ai-image-generator",
+    tech: ["Next.js", "OpenAI API", "Tailwind"]
   }
 ];
 
 export default function Projects() {
+  const [page, setPage] = useState(0);
+  const cardsPerPage = 3;
+  const totalPages = Math.ceil(projects.length / cardsPerPage);
+  const paginatedProjects = projects.slice(page * cardsPerPage, page * cardsPerPage + cardsPerPage);
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto px-6">
@@ -44,9 +63,9 @@ export default function Projects() {
 
         {/* Project Cards */}
         <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {paginatedProjects.map((project, index) => (
             <motion.div
-              key={index}
+              key={index + page * cardsPerPage}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -86,6 +105,16 @@ export default function Projects() {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* Next Button */}
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setPage((prev) => (prev + 1) % totalPages)}
+            className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-semibold shadow-lg transition-all duration-300"
+            disabled={totalPages <= 1}
+          >
+            Next
+          </button>
         </div>
       </div>
     </section>
