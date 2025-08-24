@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Projects from "@/components/project";
 import ContactForm from "@/components/contactform";
+import HistoryPage from "@/components/HistoryPage";
 import QuotesSlider from "@/components/quotes";
 import { motion } from "framer-motion";
 import Testimonials from "@/components/testimonial";
@@ -95,10 +96,10 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-4 mb-2">
           <a
-            href="/projects"
+            href="/Myhistory"
             className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg shadow-lg hover:from-indigo-700 hover:to-purple-700 transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
           >
-            Explore My Work
+            My History
           </a>
           <a
             href="/contact"
