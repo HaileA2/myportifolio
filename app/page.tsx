@@ -97,16 +97,18 @@ export default function Home() {
         <div className="flex flex-wrap gap-4 mb-2">
           <a
             href="/Myhistory"
-            className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg shadow-lg hover:from-indigo-700 hover:to-purple-700 transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
+            className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg shadow-lg hover:from-indigo-700 hover:to-purple-700 transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 flex items-center gap-2"
           >
-            My History
+            📚 My History
           </a>
-          <a
-            href="/contact"
-            className="px-8 py-3 border-2 border-indigo-500 rounded-lg hover:bg-indigo-600 hover:text-white transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
-          >
-            Get in Touch
-          </a>
+                     <a
+             href="https://t.me/WadabM"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="px-8 py-3 border-2 border-indigo-500 rounded-lg hover:bg-indigo-600 hover:text-white transition font-semibold text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 flex items-center gap-2"
+           >
+             💬 Contact Me
+           </a>
         </div>
       </motion.section>
     </main>

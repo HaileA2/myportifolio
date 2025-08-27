@@ -1,5 +1,6 @@
 "use client";
 import { motion, useInView } from "framer-motion";
+import { title } from "process";
 import { useRef } from "react";
 
 const timelineData = [
@@ -19,28 +20,65 @@ const timelineData = [
     content: [
       "By Grade 4, my family's economic struggles forced my mother to stop me from studying. She sent me to work for my uncle. The next year, I returned and repeated Grade 4.",
       "One day, my teacher Tolosa Mangistu asked the class to say all the months of the year in English. Nobody could answer, but I knew the answer. Afraid but determined, I raised my hand, answered correctly, and received applause and appreciation.",
-      "That day, I understood I was capable and clever. In the first semester, I ranked 4th in class. My teacher Lemma Legasa told me: 'How could you not be first? You are special.' Shocked, I decided from that day to be first in school. By the end of the year, I achieved it and won my first award, making my family proud."
+      "That day, I understood I was capable and clever. In the first semester, I ranked 4th in class. My teacher Lemma Legasa told me: 'How could you not be first? You are special.' Shocked, I decided from that day to be first in school. By the end of the year, I achieved it and won my first award, making my family proud.",
+      "But after Grade 4, our village school ended. To continue, I walked two hours daily to a remote school for Grades 5 and 6. Even though I didn’t know Amharic well, I fought hard and ranked 3rd in Grade 5."
     ],
     icon: "⭐"
   },
   {
-    year: "Grade 4",
-    title: "🎯 A Turning Point",
+    year: "End of Greade 6",
+    title: "Struggles After Grade 6",
     content: [
-      "By Grade 4, my family's economic struggles forced my mother to stop me from studying. She sent me to work for my uncle. The next year, I returned and repeated Grade 4.",
-      "One day, my teacher Tolosa Mangistu asked the class to say all the months of the year in English. Nobody could answer, but I knew the answer. Afraid but determined, I raised my hand, answered correctly, and received applause and appreciation.",
-      "That day, I understood I was capable and clever. In the first semester, I ranked 4th in class. My teacher Lemma Legasa told me: 'How could you not be first? You are special.' Shocked, I decided from that day to be first in school. By the end of the year, I achieved it and won my first award, making my family proud."
+      "After finishing Grade 6, our economy broke down again. At 14 years old, I went to Fitche town, where a new teachers’ college was under construction, to look for work. At first, I was rejected because of my age.",
+      "I even tried dangerous desert jobs, but couldn’t survive. Returning to Fitche, I begged again and was finally hired as a daily laborer for 35 birr per day. I worked among 250 men—no books, no pen, no school—just strength.",
+      "Within a week, I became loved and respected by workers and managers. I supported drivers as a “redat” (assistant) and worked for one year. But in my heart, I always told myself “I am building my future class.” “I will one day lead this college.”“This is my future office.” ",
+
     ],
     icon: "⭐"
   },
   {
-    year: "Present",
-    title: "🌟 Haile's Journey in One Line",
+    year: "After One Year",
+    title: "🌟Returning to School & Qero Revolution",
     content: [
-      "From a poor village boy carrying stones for 35 birr a day, to a young man shaping his future through struggle, friendship, and education—my life is a story of resilience, faith, and vision."
+      "The next year, I returned to school. My performance was good, and I met a strong friend, Abraham.",
+      "But in 2008 E.C., during the Qeerroo Revolution (Masterplan protests), soldiers surrounded our school. As we tried to escape, Abraham was caught, but I escaped—saved by God. That incident changed me forever.",
+      "My family then moved me to Gebre Guracha, which I call my second birthplace. Here, I felt life differently—friendship, laughter, and hope. At Gora School, I finished Grade 7 with 2nd rank.",
+      "Irreecha 2009 E.C. & Restriction",
+
+   "In 2009 E.C., after the tragic Irreecha at Bishoftu (Hora Harsade), we students at Gora School wanted to honor the Qeerroo. Out of 1,200 students, I and my friend Semere Andualem stood out.",
+"As a result, I was restricted from Gora School and transferred to Gebre Guracha No. 3 Primary School. My uncle told teachers to watch me closely.",
+"But here I met my lifelong friends:",
+
+"Fira’ol Girma (now Medicine student, Haramaya University)",
+
+"Dawa Temesgen (Law student, Addis Ababa University)",
+
+"Addis Bayisa (my first crush ❤️)",
+
+"Kulani Yewalishet (Software Engineering, Bule Hora University)",
+"From my brother Fraol, I learned how to score 100 in Mathematics, build friendships, and live well with teachers. I completed Grade 8 successfully."
+
+     
     ],
     icon: "🚀"
+  },
+  {
+    year:"High School (Grades 9–12)",
+    title:"Learning Thinking For other",
+    content:[
+      "Together with my friends, I entered high school.",
+
+"In Grade 9, I finished with the highest marks.",
+
+"In Grade 10, my performance grew stronger. Some classmates hated and insulted me, but I turned negative energy into fuel and scored high in the National Exam.,",
+
+"In the next year, a conflict with school leaders spread to the whole school. My uncle thought I was a politician, which hurt me. But with truth, we won respect from both students and teachers.",
+
+"Our team—me, Fira’ol, Dawa, Shelam, Deribo, Ebisa, Kulani, Abdisa—became the best volunteers of our school."
+    ],
+icon:"👀"
   }
+
 ];
 
 export default function HistoryPage() {

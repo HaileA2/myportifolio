@@ -50,7 +50,7 @@ export default function Header() {
             />
           </motion.div>
           <span className="text-white text-2xl font-extrabold tracking-wide bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:text-indigo-300 transition-colors duration-300">
-            MyPortfolio
+            H_A_M
           </span>
         </Link>
         {/* Desktop Nav */}
