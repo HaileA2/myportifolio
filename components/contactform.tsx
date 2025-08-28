@@ -140,16 +140,16 @@ export default function ContactForm() {
       <div className="bg-gray-800 mt-8 p-6 rounded-2xl shadow-md text-center">
         <h3 className="text-xl font-semibold text-white mb-4">Follow Me</h3>
         <div className="flex justify-center gap-6 text-2xl text-gray-300">
-          <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+          <a href="https://t.me/factsooradhu" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
             <FaTelegram />
           </a>
-          <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+          <a href="https://www.youtube.com/@HaileAbebe-qj5df" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
             <FaYoutube />
           </a>
-          <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
+          <a href="https://www.tiktok.com/@hyleeab?_t=ZM-8zER35jrzdA&_r=1" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
             <FaTiktok />
           </a>
-          <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+          <a href="https://www.facebook.com/profile.php?id=61555539494821" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
             <FaFacebook />
           </a>
           <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
