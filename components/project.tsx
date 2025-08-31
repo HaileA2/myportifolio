@@ -1,55 +1,64 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const projects = [
   {
-    title: "House Rental Management System",
-    description: "A comprehensive platform for managing house rentals, built with Next.js, MongoDB, and Tailwind CSS.",
-    image: "/images/houserental.png",
-    link: "https://github.com/username/rental-system",
-    tech: ["Next.js", "Tailwind", "MongoDB  ", "Node.js"]
+    title: 'House Rental Management System',
+    description:
+      'A comprehensive platform for managing house rentals, built with Next.js, MongoDB, and Tailwind CSS.',
+    image: '/images/houserental.png',
+    link: 'https://github.com/username/rental-system',
+    tech: ['Next.js', 'Tailwind', 'MongoDB  ', 'Node.js'],
   },
   {
-    title: "Portfolio Website",
-    description: "Personal portfolio showcasing design, development, and AI projects.",
-    image: "/images/myport.png",
-    link: "https://myportfolio.com",
-    tech: ["Next.js", "Framer Motion", "Vercel"]
+    title: 'Portfolio Website',
+    description:
+      'Personal portfolio showcasing design, development, and AI projects.',
+    image: '/images/myport.png',
+    link: 'https://myportfolio.com',
+    tech: ['Next.js', 'Framer Motion', 'Vercel'],
   },
   {
-    title: "E-Commerce Store",
-    description: "Full-stack e-commerce store with payment integration and admin panel.",
-    image: "/images/maalifu.png",
-    link: "https://github.com/username/store",
-    tech: ["Next.js", "Stripe", "MongoDB"]
+    title: 'E-Commerce Store',
+    description:
+      'Full-stack e-commerce store with payment integration and admin panel.',
+    image: '/images/maalifu.png',
+    link: 'https://github.com/username/store',
+    tech: ['Next.js', 'Stripe', 'MongoDB'],
   },
   {
-    title: "Learning Management System",
-    description: "A platform for online courses, registration, and student progress tracking for kidus sillase.",
-    image: "/images/woldas.jpg",
-    link: "https://github.com/username/lms",
-    tech: ["React", "Node.js", "MongoDB"]
+    title: 'Learning Management System',
+    description:
+      'A platform for online courses, registration, and student progress tracking for kidus sillase.',
+    image: '/images/woldas.jpg',
+    link: 'https://github.com/username/lms',
+    tech: ['React', 'Node.js', 'MongoDB'],
   },
   {
-    title: "AI Image Generator",
-    description: "A web app that generates images from text using AI models.",
-    image: "/images/imagegen.png",
-    link: "https://github.com/username/ai-image-generator",
-    tech: ["Next.js", "OpenAI API", "Tailwind"]
-  }
+    title: 'AI Image Generator',
+    description: 'A web app that generates images from text using AI models.',
+    image: '/images/imagegen.png',
+    link: 'https://github.com/username/ai-image-generator',
+    tech: ['Next.js', 'OpenAI API', 'Tailwind'],
+  },
 ];
 
 export default function Projects() {
   const [page, setPage] = useState(0);
   const cardsPerPage = 3;
   const totalPages = Math.ceil(projects.length / cardsPerPage);
-  const paginatedProjects = projects.slice(page * cardsPerPage, page * cardsPerPage + cardsPerPage);
+  const paginatedProjects = projects.slice(
+    page * cardsPerPage,
+    page * cardsPerPage + cardsPerPage,
+  );
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-b from-black via-gray-900 to-black"
+    >
       <div className="max-w-7xl mx-auto px-6">
-        
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -90,7 +99,9 @@ export default function Projects() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-white">{project.title}</h3>
+                <h3 className="text-xl font-semibold text-white">
+                  {project.title}
+                </h3>
                 <p className="text-gray-400 mt-2">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-3">
                   {project.tech.map((t, i) => (

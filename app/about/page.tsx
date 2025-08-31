@@ -1,16 +1,21 @@
-"use client";
-import QuotesSlider from "@/components/quotes";
-import { motion, useInView } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+'use client';
+import QuotesSlider from '@/components/quotes';
+import { motion, useInView } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 
 const skills = [
-  { name: "Web Development", icon: "🌐" },
-  { name: "Artificial Intelligence", icon: "🤖" },
-  { name: "Personal Development Training", icon: "🚀" },
-  { name: "UI/UX Design", icon: "🎨" },
+  { name: 'Web Development', icon: '🌐' },
+  { name: 'Artificial Intelligence', icon: '🤖' },
+  { name: 'Personal Development Training', icon: '🚀' },
+  { name: 'UI/UX Design', icon: '🎨' },
 ];
 
-const roles = ["Full-Stack Engineer", "AI Enthusiast", "Trainer & Mentor", "UI/UX Lover"];
+const roles = [
+  'Full-Stack Engineer',
+  'AI Enthusiast',
+  'Trainer & Mentor',
+  'UI/UX Lover',
+];
 
 function useCounter(target: number, enabled: boolean, durationMs = 1200) {
   const [value, setValue] = useState(0);
@@ -31,8 +36,8 @@ function useCounter(target: number, enabled: boolean, durationMs = 1200) {
 export default function About() {
   const heroRef = useRef<HTMLDivElement | null>(null);
   const statsRef = useRef<HTMLDivElement | null>(null);
-  const heroInView = useInView(heroRef, { once: true, margin: "-100px" });
-  const statsInView = useInView(statsRef, { once: true, margin: "-100px" });
+  const heroInView = useInView(heroRef, { once: true, margin: '-100px' });
+  const statsInView = useInView(statsRef, { once: true, margin: '-100px' });
 
   const projectsCount = useCounter(14, statsInView);
   const studentsCount = useCounter(30, statsInView);
@@ -62,13 +67,16 @@ export default function About() {
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              Hello! I'm <span className="text-indigo-400 font-semibold">Haile Abebe</span>, blending technology and growth mindset to build meaningful solutions and empower others.
+              Hello! I'm{' '}
+              <span className="text-indigo-400 font-semibold">Haile Abebe</span>
+              , blending technology and growth mindset to build meaningful
+              solutions and empower others.
             </motion.p>
 
             {/* Dynamic Roles */}
             <div className="h-10 overflow-hidden mb-8">
               <motion.div
-                key={heroInView ? "roles" : ""}
+                key={heroInView ? 'roles' : ''}
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -90,10 +98,16 @@ export default function About() {
 
             {/* CTA */}
             <div className="flex gap-4">
-              <a href="/projects" className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md font-semibold transition">
+              <a
+                href="/projects"
+                className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md font-semibold transition"
+              >
                 View Projects
               </a>
-              <a href="/contact" className="px-6 py-3 border border-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md font-semibold transition">
+              <a
+                href="/contact"
+                className="px-6 py-3 border border-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md font-semibold transition"
+              >
                 Contact Me
               </a>
             </div>
@@ -103,7 +117,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95, rotate: 2 }}
             animate={heroInView ? { opacity: 1, scale: 1, rotate: 0 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
             className="relative bg-gray-900/50 border border-indigo-700/30 rounded-2xl p-6 shadow-2xl"
           >
             <motion.div
@@ -112,7 +126,9 @@ export default function About() {
             />
             <div className="relative">
               <p className="text-gray-300 leading-relaxed">
-                My journey started with web development, and expanded into artificial intelligence and training others to unlock their potential. I believe technology amplifies human potential.
+                My journey started with web development, and expanded into
+                artificial intelligence and training others to unlock their
+                potential. I believe technology amplifies human potential.
               </p>
             </div>
           </motion.div>
@@ -122,7 +138,11 @@ export default function About() {
       {/* Stats */}
       <section ref={statsRef} className="max-w-6xl mx-auto mt-16">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {[{label: "Projects", value: projectsCount, suffix: "+"}, {label: "Students Mentored", value: studentsCount, suffix: "+"}, {label: "Years Experience", value: yearsCount, suffix: "+"}].map((s) => (
+          {[
+            { label: 'Projects', value: projectsCount, suffix: '+' },
+            { label: 'Students Mentored', value: studentsCount, suffix: '+' },
+            { label: 'Years Experience', value: yearsCount, suffix: '+' },
+          ].map((s) => (
             <motion.div
               key={s.label}
               initial={{ opacity: 0, y: 20 }}
@@ -148,7 +168,9 @@ export default function About() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-2xl font-semibold mb-6 text-indigo-300 text-center">What I Do</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-indigo-300 text-center">
+          What I Do
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {skills.map(({ name, icon }) => (
             <motion.div

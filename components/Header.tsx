@@ -1,24 +1,21 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
-    { name: "Blog", href: "/blog" },
-    { name: "Testimonials", href: "/testimonials" },
-   
-    
-
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Testimonials', href: '/testimonials' },
   ];
 
   return (
@@ -33,11 +30,14 @@ export default function Header() {
         <Link href="/" className="flex items-center space-x-3 group">
           <motion.div
             initial={{ scale: 0.9 }}
-            animate={{ scale: [1, 1.08, 1], boxShadow: [
-              '0 0 0px #6366f1',
-              '0 0 16px #6366f1',
-              '0 0 0px #6366f1'
-            ] }}
+            animate={{
+              scale: [1, 1.08, 1],
+              boxShadow: [
+                '0 0 0px #6366f1',
+                '0 0 16px #6366f1',
+                '0 0 0px #6366f1',
+              ],
+            }}
             transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
             className="rounded-full border-2 border-indigo-500 shadow-indigo-500/40 shadow-lg"
           >

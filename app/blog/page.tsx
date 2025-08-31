@@ -1,39 +1,38 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const blogPosts = [
   {
-    title: "How I Transitioned from Web Development to AI",
-    date: "August 5, 2025",
+    title: 'How I Transitioned from Web Development to AI',
+    date: 'August 5, 2025',
     description:
-      "Sharing my journey from building websites to creating AI-powered solutions, and the lessons I learned along the way.",
-    image: "/images/web2ai.png",
-    slug: "web-to-ai"
+      'Sharing my journey from building websites to creating AI-powered solutions, and the lessons I learned along the way.',
+    image: '/images/web2ai.png',
+    slug: 'web-to-ai',
   },
   {
-    title: "My Favorite Tools for Personal Development",
-    date: "July 20, 2025",
+    title: 'My Favorite Tools for Personal Development',
+    date: 'July 20, 2025',
     description:
-      "A curated list of apps, books, and techniques that have helped me grow both as a developer and as a person.",
-    image: "/images/webtools.jpg",
-    slug: "personal-development-tools"
+      'A curated list of apps, books, and techniques that have helped me grow both as a developer and as a person.',
+    image: '/images/webtools.jpg',
+    slug: 'personal-development-tools',
   },
   {
-    title: "Building My Special Portfolio",
-    date: "July 10, 2025",
+    title: 'Building My Special Portfolio',
+    date: 'July 10, 2025',
     description:
-      "Behind the scenes of designing and developing the portfolio you’re looking at right now.",
-    image: "/images/portifo.jpg",
-    slug: "portfolio-story"
-  }
+      'Behind the scenes of designing and developing the portfolio you’re looking at right now.',
+    image: '/images/portifo.jpg',
+    slug: 'portfolio-story',
+  },
 ];
 
 export default function BlogPage() {
   return (
     <section className="py-20 bg-black text-white">
       <div className="max-w-6xl mx-auto px-6">
-        
         {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
@@ -67,9 +66,7 @@ export default function BlogPage() {
                 <h2 className="text-xl font-semibold mt-2 group-hover:text-indigo-400 transition-colors">
                   {post.title}
                 </h2>
-                <p className="text-gray-300 mt-3 text-sm">
-                  {post.description}
-                </p>
+                <p className="text-gray-300 mt-3 text-sm">{post.description}</p>
               </div>
             </motion.a>
           ))}

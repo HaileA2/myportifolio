@@ -1,25 +1,25 @@
-"use client";
+'use client';
 
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const quotes = [
   {
-    text: "Growth is never by mere chance; it is the result of forces working together.",
-    author: "James Cash Penney",
+    text: 'Growth is never by mere chance; it is the result of forces working together.',
+    author: 'James Cash Penney',
   },
   {
-    text: "The only limit to our realization of tomorrow is our doubts of today.",
-    author: "Franklin D. Roosevelt",
+    text: 'The only limit to our realization of tomorrow is our doubts of today.',
+    author: 'Franklin D. Roosevelt',
   },
   {
-    text: "Personal development is the belief that you are worth the effort, time, and energy needed to develop yourself.",
-    author: "Denis Waitley",
+    text: 'Personal development is the belief that you are worth the effort, time, and energy needed to develop yourself.',
+    author: 'Denis Waitley',
   },
   {
-    text: "You don’t have to be great to start, but you have to start to be great.",
-    author: "Zig Ziglar",
+    text: 'You don’t have to be great to start, but you have to start to be great.',
+    author: 'Zig Ziglar',
   },
 ];
 
