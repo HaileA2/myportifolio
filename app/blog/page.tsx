@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const blogPosts = [
   {
@@ -55,7 +56,7 @@ export default function BlogPage() {
               className="group bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-indigo-500/40 transition-shadow"
             >
               <div className="overflow-hidden">
-                <img
+                <Image
                   src={post.image}
                   alt={post.title}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"

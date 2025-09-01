@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Projects from '@/components/project';
 import ContactForm from '@/components/contactform';
-import HistoryPage from '@/components/HistoryPage';
 import QuotesSlider from '@/components/quotes';
 import { motion } from 'framer-motion';
 import Testimonials from '@/components/testimonial';
